@@ -16,8 +16,32 @@
       "dest": "dist/apps/api/main.js"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "dist/apps/client/en/assets/$1"
+    },
+    {
+      "src": "/locales/(.*)",
+      "dest": "dist/apps/client/en/locales/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "dist/apps/client/en/favicon.ico"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "dist/apps/client/en/manifest.json"
+    },
+    {
+      "src": "/ngsw-worker.js",
+      "dest": "dist/apps/client/en/ngsw-worker.js"
+    },
+    {
+      "src": "/ngsw-config.json",
+      "dest": "dist/apps/client/en/ngsw-config.json"
+    },
+    {
       "src": "/(.*)",
-      "dest": "dist/apps/client/en/$1"
+      "dest": "dist/apps/client/en/index.html"
     }
   ],
   "outputDirectory": "dist",
